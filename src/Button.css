@@ -52,16 +52,7 @@
     background: #fff;
     color: #242424;
 }
-/* .btn--medium:hover{
-    transition: all 0.3s ease-out;
-    background: #fff;
-    color: #242424;
-}
-.btn--mobile:hover{
-    transition: all 0.3s ease-out;
-    background: #fff;
-    color: #242424;;
-} */
+
 .btn--wide:hover{
     color: #fff;
     background-color: #f00946;

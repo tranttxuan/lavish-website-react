@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { MdFingerprint } from 'react-icons/md';
-import { FaBars, FaTimes } from "react-icons/fa";
+import { MdFingerprint } from '../../build/node_modules/react-icons/md';
+import { FaBars, FaTimes } from "../../build/node_modules/react-icons/fa";
 import { Button } from "../Button";
 import './Navbar.css';
-import { IconContext } from "react-icons/lib"; //change color of icon bu using API
+import { IconContext } from "../../build/node_modules/react-icons/lib"; //change color of icon bu using API
 
 function Navbar() {
     const [click, setClick] = useState(false);
@@ -48,16 +48,19 @@ function Navbar() {
                                     Home
                             </Link>
                             </li>
+
                             <li className="nav-item">
                                 <Link to='/services' className="nav-links" onClick={closeMobileMenu}>
                                     Services
                             </Link>
                             </li>
-                            <li to='/products' className="nav-item" onClick={closeMobileMenu}>
-                                <Link className="nav-links">
+
+                            <li className="nav-item" >
+                                <Link to='/products' className="nav-links" onClick={closeMobileMenu}>
                                     Products
                             </Link>
                             </li>
+
                             <li className='nav-btn'>
                                 {button ? (
                                     <Link to='/sign-up' className="btn-link">
